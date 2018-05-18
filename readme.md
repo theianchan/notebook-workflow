@@ -1,5 +1,3 @@
-# Notebook workflow
-
 ## New project workflow
 1. `mkdir $project_name && cd $project_name`
 2. (Requires `virtualenvwrapper`) `mkvirtualenv $project_name`
