@@ -1,12 +1,18 @@
-# Notebook Workflow
+# Notebook workflow
 
-## New Project Workflow
+## New project workflow
 1. `mkdir $project_name && cd $project_name`
-2. (Requires virtualenvwrapper) `mkvirtualenv $project_name`
-3. (Requires ipykernel in the project environment) `python -m ipykernel install --user --name $project_name --display-name "Python ($project_name)"`
+2. (Requires `virtualenvwrapper`) `mkvirtualenv $project_name`
+3. (Requires `ipykernel` in the project environment) `python -m ipykernel install --user --name $project_name --display-name "Python ($project_name)"`
 4. `jupyter notebook` should have a new kernel option for "Python ($project_name)"
 
-Next: what to git
+## Git workflow
+1. `pip freeze > requirements.txt`
+2. No need to add any `/venv/` folders to `.gitignore` because thanks to `virtualenvwrapper` this isn't stored in the project folder.
+3. `git add`, `git commit` etc
+
+## Running project from a different machine (probably Paperspace)
+1. TODO
 
 ## Reference
 Kernel install locations:
@@ -15,3 +21,7 @@ Kernel install locations:
 2. `/usr/local/share/jupyter/kernels`
 
 Or check `jupyter --paths`.
+
+## Helpful
+1. [Python virtualenv primer](https://realpython.com/python-virtual-environments-a-primer/)
+2. [Kernels for different Python versions/different environments](http://ipython.readthedocs.io/en/stable/install/kernel_install.html)
