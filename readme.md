@@ -1,7 +1,7 @@
 ## New project workflow
 1. `mkdir $project_name; cd $project_name`
-2. (Requires `virtualenvwrapper`) `mkvirtualenv $project_name`
-3. (Requires `ipykernel` in the project environment) `python -m ipykernel install --user --name $project_name --display-name "Python ($project_name)"`
+2. (Requires `virtualenvwrapper` in global) `mkvirtualenv $project_name`
+3. (Requires `ipykernel` in the project environment `pip install ipykernel`) `python -m ipykernel install --user --name $project_name --display-name "Python ($project_name)"`
 4. `jupyter notebook` should have a new kernel option for "Python ($project_name)"
 
 ## Git workflow
